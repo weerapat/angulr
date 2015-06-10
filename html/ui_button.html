@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Html version | Angulr</title>
+  <meta name="description" content="Angularjs, Html5, Music, Landing, 4 in 1 ui kits package" />
+  <meta name="keywords" content="AngularJS, angular, bootstrap, admin, dashboard, panel, app, charts, components,flat, responsive, layout, kit, ui, route, web, app, widgets" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="../bower_components/animate.css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="../bower_components/simple-line-icons/css/simple-line-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/font.css" type="text/css" />
+  <link rel="stylesheet" href="css/app.css" type="text/css" />
+
+</head>
+<body>
+<div class="app app-header-fixed  ">
+  
+  <!-- header -->
+  <header id="header" class="app-header navbar" role="menu">
+          <!-- navbar header -->
+      <div class="navbar-header bg-dark">
+        <button class="pull-right visible-xs dk" ui-toggle="show" target=".navbar-collapse">
+          <i class="glyphicon glyphicon-cog"></i>
+        </button>
+        <button class="pull-right visible-xs" ui-toggle="off-screen" target=".app-aside" ui-scroll="app">
+          <i class="glyphicon glyphicon-align-justify"></i>
+        </button>
+        <!-- brand -->
+        <a href="#/" class="navbar-brand text-lt">
+          <i class="fa fa-btc"></i>
+          <img src="img/logo.png" alt="." class="hide">
+          <span class="hidden-folded m-l-xs">Angulr</span>
+        </a>
+        <!-- / brand -->
+      </div>
+      <!-- / navbar header -->
+
+      <!-- navbar collapse -->
+      <div class="collapse pos-rlt navbar-collapse box-shadow bg-white-only">
+        <!-- buttons -->
+        <div class="nav navbar-nav hidden-xs">
+          <a href="#" class="btn no-shadow navbar-btn" ui-toggle="app-aside-folded" target=".app">
+            <i class="fa fa-dedent fa-fw text"></i>
+            <i class="fa fa-indent fa-fw text-active"></i>
+          </a>
+          <a href="#" class="btn no-shadow navbar-btn" ui-toggle="show" target="#aside-user">
+            <i class="icon-user fa-fw"></i>
+          </a>
+        </div>
+        <!-- / buttons -->
+
+        <!-- link and dropdown -->
+        <ul class="nav navbar-nav hidden-sm">
+          <li class="dropdown pos-stc">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+              <span>Mega</span> 
+              <span class="caret"></span>
+            </a>
+            <div class="dropdown-menu wrapper w-full bg-white">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="m-l-xs m-t-xs m-b-xs font-bold">Pages <span class="badge badge-sm bg-success">10</span></div>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <ul class="list-unstyled l-h-2x">
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Profile</a>
+                        </li>
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Post</a>
+                        </li>
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Search</a>
+                        </li>
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Invoice</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-6">
+                      <ul class="list-unstyled l-h-2x">
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Price</a>
+                        </li>
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Lock screen</a>
+                        </li>
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Sign in</a>
+                        </li>
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Sign up</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 b-l b-light">
+                  <div class="m-l-xs m-t-xs m-b-xs font-bold">UI Kits <span class="label label-sm bg-primary">12</span></div>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <ul class="list-unstyled l-h-2x">
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Buttons</a>
+                        </li>
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Icons <span class="badge badge-sm bg-warning">1000+</span></a>
+                        </li>
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Grid</a>
+                        </li>
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Widgets</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-6">
+                      <ul class="list-unstyled l-h-2x">
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Bootstap</a>
+                        </li>
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Sortable</a>
+                        </li>
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Portlet</a>
+                        </li>
+                        <li>
+                          <a href><i class="fa fa-fw fa-angle-right text-muted m-r-xs"></i>Timeline</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 b-l b-light">
+                  <div class="m-l-xs m-t-xs m-b-sm font-bold">Analysis</div>
+                  <div class="text-center">
+                    <div class="inline">
+                      <div ui-jq="easyPieChart" ui-options="{
+                          percent: 65,
+                          lineWidth: 50,
+                          trackColor: '#e8eff0',
+                          barColor: '#23b7e5',
+                          scaleColor: false,
+                          size: 100,
+                          rotate: 90,
+                          lineCap: 'butt',
+                          animate: 2000
+                        }">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+              <i class="fa fa-fw fa-plus visible-xs-inline-block"></i>
+              <span translate="header.navbar.new.NEW">New</span> <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#" translate="header.navbar.new.PROJECT">Projects</a></li>
+              <li>
+                <a href>
+                  <span class="badge bg-info pull-right">5</span>
+                  <span translate="header.navbar.new.TASK">Task</span>
+                </a>
+              </li>
+              <li><a href translate="header.navbar.new.USER">User</a></li>
+              <li class="divider"></li>
+              <li>
+                <a href>
+                  <span class="badge bg-danger pull-right">4</span>
+                  <span translate="header.navbar.new.EMAIL">Email</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- / link and dropdown -->
+
+        <!-- search form -->
+        <form class="navbar-form navbar-form-sm navbar-left shift" ui-shift="prependTo" data-target=".navbar-collapse" role="search" ng-controller="TypeaheadDemoCtrl">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control input-sm bg-light no-border rounded padder" placeholder="Search projects...">
+              <span class="input-group-btn">
+                <button type="submit" class="btn btn-sm bg-light rounded"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </div>
+        </form>
+        <!-- / search form -->
+
+        <!-- nabar right -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+              <i class="icon-bell fa-fw"></i>
+              <span class="visible-xs-inline">Notifications</span>
+              <span class="badge badge-sm up bg-danger pull-right-xs">2</span>
+            </a>
+            <!-- dropdown -->
+            <div class="dropdown-menu w-xl animated fadeInUp">
+              <div class="panel bg-white">
+                <div class="panel-heading b-light bg-light">
+                  <strong>You have <span>2</span> notifications</strong>
+                </div>
+                <div class="list-group">
+                  <a href class="media list-group-item">
+                    <span class="pull-left thumb-sm">
+                      <img src="img/a0.jpg" alt="..." class="img-circle">
+                    </span>
+                    <span class="media-body block m-b-none">
+                      Use awesome animate.css<br>
+                      <small class="text-muted">10 minutes ago</small>
+                    </span>
+                  </a>
+                  <a href class="media list-group-item">
+                    <span class="media-body block m-b-none">
+                      1.0 initial released<br>
+                      <small class="text-muted">1 hour ago</small>
+                    </span>
+                  </a>
+                </div>
+                <div class="panel-footer text-sm">
+                  <a href class="pull-right"><i class="fa fa-cog"></i></a>
+                  <a href="#notes" data-toggle="class:show animated fadeInRight">See all the notifications</a>
+                </div>
+              </div>
+            </div>
+            <!-- / dropdown -->
+          </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle clear" data-toggle="dropdown">
+              <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                <img src="img/a0.jpg" alt="...">
+                <i class="on md b-white bottom"></i>
+              </span>
+              <span class="hidden-sm hidden-md">John.Smith</span> <b class="caret"></b>
+            </a>
+            <!-- dropdown -->
+            <ul class="dropdown-menu animated fadeInRight w">
+              <li class="wrapper b-b m-b-sm bg-light m-t-n-xs">
+                <div>
+                  <p>300mb of 500mb used</p>
+                </div>
+                <div class="progress progress-xs m-b-none dker">
+                  <div class="progress-bar progress-bar-info" data-toggle="tooltip" data-original-title="50%" style="width: 50%"></div>
+                </div>
+              </li>
+              <li>
+                <a href>
+                  <span class="badge bg-danger pull-right">30%</span>
+                  <span>Settings</span>
+                </a>
+              </li>
+              <li>
+                <a ui-sref="app.page.profile">Profile</a>
+              </li>
+              <li>
+                <a ui-sref="app.docs">
+                  <span class="label bg-info pull-right">new</span>
+                  Help
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a ui-sref="access.signin">Logout</a>
+              </li>
+            </ul>
+            <!-- / dropdown -->
+          </li>
+        </ul>
+        <!-- / navbar right -->
+      </div>
+      <!-- / navbar collapse -->
+  </header>
+  <!-- / header -->
+
+  <!-- aside -->
+  <aside id="aside" class="app-aside hidden-xs bg-dark">
+          <div class="aside-wrap">
+        <div class="navi-wrap">
+          <!-- user -->
+          <div class="clearfix hidden-xs text-center hide" id="aside-user">
+            <div class="dropdown wrapper">
+              <a href="app.page.profile">
+                <span class="thumb-lg w-auto-folded avatar m-t-sm">
+                  <img src="img/a0.jpg" class="img-full" alt="...">
+                </span>
+              </a>
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle hidden-folded">
+                <span class="clear">
+                  <span class="block m-t-sm">
+                    <strong class="font-bold text-lt">John.Smith</strong> 
+                    <b class="caret"></b>
+                  </span>
+                  <span class="text-muted text-xs block">Art Director</span>
+                </span>
+              </a>
+              <!-- dropdown -->
+              <ul class="dropdown-menu animated fadeInRight w hidden-folded">
+                <li class="wrapper b-b m-b-sm bg-info m-t-n-xs">
+                  <span class="arrow top hidden-folded arrow-info"></span>
+                  <div>
+                    <p>300mb of 500mb used</p>
+                  </div>
+                  <div class="progress progress-xs m-b-none dker">
+                    <div class="progress-bar bg-white" data-toggle="tooltip" data-original-title="50%" style="width: 50%"></div>
+                  </div>
+                </li>
+                <li>
+                  <a href>Settings</a>
+                </li>
+                <li>
+                  <a href="page_profile.html">Profile</a>
+                </li>
+                <li>
+                  <a href>
+                    <span class="badge bg-danger pull-right">3</span>
+                    Notifications
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="page_signin.html">Logout</a>
+                </li>
+              </ul>
+              <!-- / dropdown -->
+            </div>
+            <div class="line dk hidden-folded"></div>
+          </div>
+          <!-- / user -->
+
+          <!-- nav -->
+          <nav ui-nav class="navi clearfix">
+            <ul class="nav">
+              <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                <span>Navigation</span>
+              </li>
+              <li>
+                <a href class="auto">      
+                  <span class="pull-right text-muted">
+                    <i class="fa fa-fw fa-angle-right text"></i>
+                    <i class="fa fa-fw fa-angle-down text-active"></i>
+                  </span>
+                  <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
+                  <span class="font-bold">Dashboard</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                  <li class="nav-sub-header">
+                    <a href>
+                      <span>Dashboard</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="index.html">
+                      <span>Dashboard v1</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dashboard.html">
+                      <b class="label bg-info pull-right">N</b>
+                      <span>Dashboard v2</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="mail.html">
+                  <b class="badge bg-info pull-right">9</b>
+                  <i class="glyphicon glyphicon-envelope icon text-info-lter"></i>
+                  <span class="font-bold">Email</span>
+                </a>
+              </li>
+              <li class="line dk"></li>
+
+              <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                <span>Components</span>
+              </li>
+              <li>
+                <a href class="auto">      
+                  <span class="pull-right text-muted">
+                    <i class="fa fa-fw fa-angle-right text"></i>
+                    <i class="fa fa-fw fa-angle-down text-active"></i>
+                  </span>
+                  <b class="badge bg-info pull-right">3</b>
+                  <i class="glyphicon glyphicon-th"></i>
+                  <span>Layout</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                  <li class="nav-sub-header">
+                    <a href>
+                      <span>Layout</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="layout_app.html">
+                      <span>Application</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="layout_fullwidth.html">
+                      <span>Full width</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="layout_boxed.html">
+                      <span>Boxed layout</span>
+                    </a>
+                  </li>      
+                </ul>
+              </li>
+              <li>
+                <a href class="auto">
+                  <span class="pull-right text-muted">
+                    <i class="fa fa-fw fa-angle-right text"></i>
+                    <i class="fa fa-fw fa-angle-down text-active"></i>
+                  </span>
+                  <i class="glyphicon glyphicon-briefcase icon"></i>
+                  <span>UI Kits</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                  <li class="nav-sub-header">
+                    <a href>
+                      <span>UI Kits</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="ui_button.html">
+                      <span>Buttons</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="ui_icon.html">
+                      <b class="badge bg-info pull-right">3</b>
+                      <span>Icons</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="ui_grid.html">
+                      <span>Grid</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="ui_widget.html">
+                      <b class="badge bg-success pull-right">13</b>
+                      <span>Widgets</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="ui_sortable.html">
+                      <span>Sortable</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="ui_portlet.html">
+                      <span>Portlet</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="ui_timeline.html">
+                      <span>Timeline</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="ui_jvectormap.html">
+                      <span>Vector Map</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href class="auto">
+                  <span class="pull-right text-muted">
+                    <i class="fa fa-fw fa-angle-right text"></i>
+                    <i class="fa fa-fw fa-angle-down text-active"></i>
+                  </span>
+                  <b class="label bg-primary pull-right">2</b>
+                  <i class="glyphicon glyphicon-list"></i>
+                  <span>Table</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                  <li class="nav-sub-header">
+                    <a href>
+                      <span>Table</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="table_static.html">
+                      <span>Table static</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="table_datatable.html">
+                      <span>Datatable</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="table_footable.html">
+                      <span>Footable</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href class="auto">
+                  <span class="pull-right text-muted">
+                    <i class="fa fa-fw fa-angle-right text"></i>
+                    <i class="fa fa-fw fa-angle-down text-active"></i>
+                  </span>
+                  <i class="glyphicon glyphicon-edit"></i>
+                  <span>Form</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                  <li class="nav-sub-header">
+                    <a href>
+                      <span>Form</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="form_element.html">
+                      <span>Form elements</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="ui_chart.html">
+                  <i class="glyphicon glyphicon-signal"></i>
+                  <span>Chart</span>
+                </a>
+              </li>
+              <li>
+                <a href class="auto">
+                  <span class="pull-right text-muted">
+                    <i class="fa fa-fw fa-angle-right text"></i>
+                    <i class="fa fa-fw fa-angle-down text-active"></i>
+                  </span>
+                  <i class="glyphicon glyphicon-file icon"></i>
+                  <span>Pages</span>
+                </a>
+                <ul class="nav nav-sub dk">
+                  <li class="nav-sub-header">
+                    <a href>
+                      <span>Pages</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="page_profile.html">
+                      <span>Profile</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="page_post.html">
+                      <span>Post</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="page_search.html">
+                      <span>Search</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="page_invoice.html">
+                      <span>Invoice</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="page_price.html">
+                      <span>Price</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="page_lockme.html">
+                      <span>Lock screen</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="page_signin.html">
+                      <span>Signin</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="page_signup.html">
+                      <span>Signup</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="page_forgotpwd.html">
+                      <span>Forgot password</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="page_404.html">
+                      <span>404</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="line dk hidden-folded"></li>
+
+              <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">          
+                <span>Your Stuff</span>
+              </li>  
+              <li>
+                <a href="page_profile.html">
+                  <i class="icon-user icon text-success-lter"></i>
+                  <b class="badge bg-success pull-right">30%</b>
+                  <span>Profile</span>
+                </a>
+              </li>
+              <li>
+                <a href>
+                  <i class="icon-question icon"></i>
+                  <span>Documents</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- nav -->
+
+          <!-- aside footer -->
+          <div class="wrapper m-t">
+            <div class="text-center-folded">
+              <span class="pull-right pull-none-folded">60%</span>
+              <span class="hidden-folded">Milestone</span>
+            </div>
+            <div class="progress progress-xxs m-t-sm dk">
+              <div class="progress-bar progress-bar-info" style="width: 60%;">
+              </div>
+            </div>
+            <div class="text-center-folded">
+              <span class="pull-right pull-none-folded">35%</span>
+              <span class="hidden-folded">Release</span>
+            </div>
+            <div class="progress progress-xxs m-t-sm dk">
+              <div class="progress-bar progress-bar-primary" style="width: 35%;">
+              </div>
+            </div>
+          </div>
+          <!-- / aside footer -->
+        </div>
+      </div>
+  </aside>
+  <!-- / aside -->
+  
+  <!-- content -->
+  <div id="content" class="app-content" role="main">
+    <div class="app-content-body ">
+      
+
+<div class="bg-light lter b-b wrapper-md">
+  <h1 class="m-n font-thin h3">Buttons</h1>
+</div>
+<div class="wrapper-md">
+  <div class="row">
+    <div class="col-md-6">
+      <h4 class="m-t-xs">Button options</h4>
+      <div>
+        <button class="btn m-b-xs w-xs btn-default">Default</button>
+        <button class="btn m-b-xs w-xs btn-primary">Primary</button>
+        <button class="btn m-b-xs w-xs btn-success">Success</button>
+        <button class="btn m-b-xs w-xs btn-info">Info</button>
+        <button class="btn m-b-xs w-xs btn-warning">Warning</button>
+        <button class="btn m-b-xs w-xs btn-danger">Danger</button>
+        <button class="btn m-b-xs w-xs btn-dark">Dark</button>
+        <button class="btn m-b-xs w-xs btn-default disabled">Disabled</button>
+      </div>
+
+      <h4 class="m-t-lg">
+        Button addon
+      </h4>
+      <p>
+        <button class="btn m-b-xs btn-sm btn-primary btn-addon"><i class="fa fa-plus"></i>Primary</button>
+        <button class="btn m-b-xs btn-sm btn-info btn-addon"><i class="fa fa-trash-o"></i>Info</button>
+        <button class="btn m-b-xs btn-sm btn-success btn-addon"><i class="fa fa-minus pull-right"></i>Success</button>
+        <button class="btn m-b-xs btn-sm btn-warning btn-addon"><i class="fa fa-circle"></i>Warning</button>
+        <button class="btn m-b-xs btn-sm btn-default btn-addon"><i class="fa fa-plus"></i>Default</button>
+      </p>
+      <p>
+        <button class="btn btn-default btn-addon"><i class="fa fa-music"></i>Default</button>
+        <button class="btn btn-info btn-addon"><i class="fa fa-play"></i>Info</button>
+      </p>
+      
+      <h4 class="m-t">Button size</h4>
+      <p>
+        <button class="btn btn-default btn-lg">Large</button>
+        <button class="btn btn-primary btn-addon btn-lg"><i class="fa fa-plus"></i>Addon</button>
+      </p>
+      <p>
+        <button class="btn btn-default">Default button</button>
+      </p>
+      <p>
+        <button class="btn btn-default btn-sm">Small button</button>
+      </p>
+      <p>
+        <button class="btn btn-default btn-xs">Extra small button</button>
+      </p>
+ 
+      <h4 class="m-t-lg">Button dropdowns</h4>
+      <p class="text-muted">Single button dropdowns</p>
+      <div class="m-b-sm">
+        <div class="btn-group dropdown" dropdown>
+          <button class="btn btn-default" dropdown-toggle>Action <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href>Action</a></li>
+            <li><a href>Another action</a></li>
+            <li><a href>Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href>Separated link</a></li>
+          </ul>
+        </div>
+        <div class="btn-group dropdown" dropdown>
+          <button class="btn btn-success" dropdown-toggle>Action <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href>Action</a></li>
+            <li><a href>Another action</a></li>
+            <li><a href>Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href>Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="m-b-sm">
+        <div class="btn-group dropdown" dropdown>
+          <button class="btn btn-default btn-sm" dropdown-toggle>Action <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href>Action</a></li>
+            <li><a href>Another action</a></li>
+            <li><a href>Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href>Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="m-b-sm">
+        <div class="btn-group dropdown" dropdown>
+          <button class="btn btn-default btn-xs" dropdown-toggle>Action <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href>Action</a></li>
+            <li><a href>Another action</a></li>
+            <li><a href>Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href>Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-muted">Split button dropdowns & variation </p>
+      <div class="m-b-sm">
+        <div class="btn-group dropdown" dropdown>
+          <button class="btn btn-default">Action</button>
+          <button class="btn btn-default" dropdown-toggle><span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href>Action</a></li>
+            <li><a href>Another action</a></li>
+            <li><a href>Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href>Separated link</a></li>
+          </ul>
+        </div>
+        <div class="btn-group dropdown dropup" dropdown>
+          <button class="btn btn-default">Action</button>
+          <button class="btn btn-default" dropdown-toggle><span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href>Action</a></li>
+            <li><a href>Another action</a></li>
+            <li><a href>Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href>Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <h4 class="m-t-lg">Button with icon</h4>
+      <p>
+        <button class="btn btn-default"><i class="fa fa-html5"></i> Html5</button>
+        <button class="btn btn-info"><i class="fa fa-css3"></i> CSS3</button>
+      </p>            
+      <p>
+        <button class="btn btn-default btn-lg btn-block"><i class="fa fa-bars pull-right"></i> Block button with icon</button>
+      </p>
+      <p>
+        <button class="btn btn-default btn-block"><i class="fa fa-bars pull-left"></i> Block button with icon</button>
+      </p>      
+      <h4 class="m-t-lg">
+        Button icon
+      </h4>
+      <p>
+        <button class="btn btn-sm btn-icon btn-info"><i class="fa fa-twitter"></i></button>
+        <button class="btn btn-sm btn-icon btn-danger"><i class="fa fa-google-plus"></i></button>
+      </p>
+      <h4 class="m-t-lg">
+        Button icon rounded
+      </h4>
+      <p>
+        <button class="btn btn-rounded btn-sm btn-icon btn-default"><i class="fa fa-twitter"></i></button>
+        <button class="btn btn-rounded btn btn-icon btn-default"><i class="fa fa-facebook"></i></button>
+        <button class="btn btn-rounded btn-lg btn-icon btn-default"><i class="fa fa-google-plus"></i></button>
+      </p>       
+    </div>
+    <div class="col-md-6">
+      <h4 class="m-t-xs">Rounded button</h4>
+      <div>
+        <button class="btn m-b-xs w-xs btn-default btn-rounded">Default</button>
+        <button class="btn m-b-xs w-xs btn-primary btn-rounded">Primary</button>
+        <button class="btn m-b-xs w-xs btn-success btn-rounded">Success</button>
+        <button class="btn m-b-xs w-xs btn-info btn-rounded">Info</button>
+        <button class="btn m-b-xs w-xs btn-warning btn-rounded">Warning</button>
+        <button class="btn m-b-xs w-xs btn-danger btn-rounded">Danger</button>
+        <button class="btn m-b-xs w-xs btn-dark btn-rounded">Dark</button>
+        <button class="btn m-b-xs w-xs btn-default btn-rounded disabled">Disabled</button>
+      </div>
+
+      <h4 class="m-t-lg">Button groups</h4>
+      <div class="m-b-sm">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default">Left</button>
+          <button type="button" class="btn btn-default">Middle</button>
+          <button type="button" class="btn btn-default">Right</button>
+        </div>              
+      </div>
+      <p class="text-muted">Vertical button groups</p>
+      <div class="btn-group-vertical m-b-sm">
+        <button type="button" class="btn btn-default">Top</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Bottom</button>
+      </div>
+      <p class="text-muted">Nested button groups</p>
+      <div class="btn-group m-b-sm">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-success">2</button>
+        <button type="button" class="btn btn-default">3</button>
+        <div class="btn-group dropdown" dropdown>
+          <button type="button" class="btn btn-default" dropdown-toggle>
+            Dropdown
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href>Dropdown link</a></li>
+            <li><a href>Dropdown link</a></li>
+            <li><a href>Dropdown link</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-muted">Justified button groups</p>
+      <div class="m-b-sm">
+        <div class="btn-group btn-group-justified">
+          <a href class="btn btn-primary">Left</a>
+          <a href class="btn btn-info">Middle</a>
+          <a href class="btn btn-success">Right</a>
+        </div>
+      </div>
+      <p class="text-muted">Multiple button groups</p>
+      <div class="btn-toolbar">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default">1</button>
+          <button type="button" class="btn btn-default active">2</button>
+          <button type="button" class="btn btn-default">3</button>
+          <button type="button" class="btn btn-default">4</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default">5</button>
+          <button type="button" class="btn btn-default">6</button>
+          <button type="button" class="btn btn-default">7</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default">8</button>
+        </div>
+      </div>
+    
+      <h4 class="m-t-lg">Button components</h4>
+      <p class="text-muted">
+        <span>There are a few easy ways to quickly get started with Bootstrap, each one ...</span>
+        <span class="text-muted hide" id="moreless"> appealing to a different skill level and use case. Read through to see what suits your particular needs.</span>
+      </p>
+      <p>
+        <button class="btn btn-sm btn-default" ui-toggle-class="show" target="#moreless">
+          <i class="fa fa-plus text"></i>
+          <span class="text">More</span>
+          <i class="fa fa-minus text-active"></i>
+          <span class="text-active">Less</span>
+        </button>
+      </p>
+      <p>
+        <button class="btn btn-default" ui-toggle-class="btn-success">
+          <i class="fa fa-cloud-upload text"></i>
+          <span class="text">Upload</span>
+          <i class="fa fa-check text-active"></i>
+          <span class="text-active">Success</span>
+        </button>
+        <a class="btn btn-default" ui-toggle-class="button">
+          <i class="fa fa-heart-o text"></i>
+          <i class="fa fa-heart text-active text-danger"></i>
+        </a>
+        <a class="btn btn-default" ui-toggle-class="button">
+          <span class="text">
+            <i class="fa fa-thumbs-up text-success"></i> 25
+          </span>
+          <span class="text-active">
+            <i class="fa fa-thumbs-down text-danger"></i> 10
+          </span>
+        </a>
+        <button class="btn btn-success" ui-toggle-class="show inline" target="#spin">
+          <span class="text">Save</span>
+          <span class="text-active">Saving...</span>
+        </button> 
+        <i class="fa fa-spin fa-spinner hide" id="spin"></i>
+      </p>
+      <div class="m-b-sm">
+        <div class="btn-group" ng-init="radioModel = 'Male'">
+          <label class="btn btn-sm btn-info"    ng-model="radioModel" btn-radio="'Male'"><i class="fa fa-check text-active"></i> Male</label>
+          <label class="btn btn-sm btn-success" ng-model="radioModel" btn-radio="'Female'"><i class="fa fa-check text-active"></i> Female</label>
+          <label class="btn btn-sm btn-primary" ng-model="radioModel" btn-radio="'N/A'"><i class="fa fa-check text-active"></i> N/A</label>
+        </div>
+      </div>
+
+      <div class="m-b-sm">
+        <div class="btn-group" ng-init="checkModel = {option1: true, option2: false}">
+          <label class="btn btn-sm btn-default" ng-model="checkModel.option1" btn-checkbox>Option1</label>
+          <label class="btn btn-sm btn-default" ng-model="checkModel.option3" btn-checkbox>Option2</label>
+        </div>                
+      </div>
+
+      <h4 class="m-t-lg">
+        <button class="pull-right text-sm btn btn-xs btn-default" ui-toggle-class="btn-rounded" target="#social-buttons button">Toggle</button>
+        Social buttons
+      </h4>
+      <p id="social-buttons">
+        <button class="btn btn-rounded btn-sm btn-info"><i class="fa fa-fw fa-twitter"></i> Twitter</button>
+        <button class="btn btn-rounded btn-sm btn-danger"><i class="fa fa-fw fa-google-plus"></i> Google+</button>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+  <!-- / content -->
+
+  <!-- footer -->
+  <footer id="footer" class="app-footer" role="footer">
+        <div class="wrapper b-t bg-light">
+      <span class="pull-right">2.0.1 <a href ui-scroll="app" class="m-l-sm text-muted"><i class="fa fa-long-arrow-up"></i></a></span>
+    	&copy; 2015 Copyright.
+    </div>
+  </footer>
+  <!-- / footer -->
+
+</div>
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="js/ui-load.js"></script>
+<script src="js/ui-jp.config.js"></script>
+<script src="js/ui-jp.js"></script>
+<script src="js/ui-nav.js"></script>
+<script src="js/ui-toggle.js"></script>
+
+</body>
+</html>
