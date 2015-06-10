@@ -8,14 +8,14 @@ angular.module('app')
     [          '$rootScope', '$state', '$stateParams',
       function ($rootScope,   $state,   $stateParams) {
           $rootScope.$state = $state;
-          $rootScope.$stateParams = $stateParams;        
+          $rootScope.$stateParams = $stateParams;
       }
     ]
   )
   .config(
-    [          '$stateProvider', '$urlRouterProvider', 'JQ_CONFIG', 
+    [          '$stateProvider', '$urlRouterProvider', 'JQ_CONFIG',
       function ($stateProvider,   $urlRouterProvider, JQ_CONFIG) {
-          
+
           $urlRouterProvider
               .otherwise('/app/dashboard-v1');
           $stateProvider
@@ -63,7 +63,7 @@ angular.module('app')
               .state('app.ui.widgets', {
                   url: '/widgets',
                   templateUrl: 'tpl/ui_widgets.html'
-              })          
+              })
               .state('app.ui.bootstrap', {
                   url: '/bootstrap',
                   templateUrl: 'tpl/ui_bootstrap.html'
@@ -140,7 +140,7 @@ angular.module('app')
                             'js/app/map/ui-map.js',
                             'js/app/map/map.js'] ).then(
                               function(){
-                                return loadGoogleMaps(); 
+                                return loadGoogleMaps();
                               }
                             );
                       }]
@@ -563,7 +563,7 @@ angular.module('app')
                                   files: ['js/app/weather/skycons.js',
                                           'js/app/weather/angular-skycons.js',
                                           'js/app/weather/ctrl.js',
-                                          JQ_CONFIG.moment ] 
+                                          JQ_CONFIG.moment ]
                               }
                           );
                       }]
@@ -591,12 +591,12 @@ angular.module('app')
                       deps: ['$ocLazyLoad',
                         function( $ocLazyLoad ){
                           return $ocLazyLoad.load([
-                            'com.2fdevs.videogular', 
-                            'com.2fdevs.videogular.plugins.controls', 
+                            'com.2fdevs.videogular',
+                            'com.2fdevs.videogular.plugins.controls',
                             'com.2fdevs.videogular.plugins.overlayplay',
                             'com.2fdevs.videogular.plugins.poster',
                             'com.2fdevs.videogular.plugins.buffering',
-                            'js/app/music/ctrl.js', 
+                            'js/app/music/ctrl.js',
                             'js/app/music/theme.css'
                           ]);
                       }]
@@ -626,6 +626,19 @@ angular.module('app')
                     url: '/playlist/{fold}',
                     templateUrl: 'tpl/music.playlist.html'
                 })
+
+                // Askhanuman Application
+                .state('app.carinsurance.listing', {
+                      url: '/carinsurance',
+                      templateUrl: 'tpl/CarInsurance/listing.html',
+                      resolve: {
+                          deps: ['uiLoad',
+                            function( uiLoad ){
+                              return uiLoad.load( ['js/app/todo/todo.js',
+                                                   JQ_CONFIG.moment] );
+                          }]
+                      }
+                  })
       }
     ]
   );
